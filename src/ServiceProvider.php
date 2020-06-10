@@ -67,7 +67,7 @@ class ServiceProvider extends BaseServiceProvider
             return new Dispatcher($app->make('events'));
         });
 
-        $this->app->alias('sm.event.dispatcher', EventDispatcherInterface::class);
+        // $this->app->alias('sm.event.dispatcher', EventDispatcherInterface::class);
     }
 
     protected function registerFactory()
